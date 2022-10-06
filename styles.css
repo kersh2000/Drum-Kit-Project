@@ -1,0 +1,63 @@
+body {
+  margin: 8px;
+}
+
+#drum-kit {
+  position: relative;
+  border: 2px black solid;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img, #buttons, #labels{
+  width: 100%;
+}
+
+button {
+  position: absolute;
+}
+
+#snare-btn {
+  text-align:end;
+}
+
+#btn {
+  left: 50%;
+}
+
+#bass-drum-btn {
+  border-radius: 50%;
+}
+
+#crash-btn {
+  transform: rotate(-6deg);
+  border-radius: 50%;
+}
+
+#floor-tom-btn {
+  border-radius: 10%;
+  transform: rotate(5deg);
+}
+
+#hi-hat-btn {
+  border-radius: 50%;
+  transform: rotate(3deg);
+}
+
+#snare-btn {
+  border-radius: 10%;
+}
+
+#medium-tom-btn {
+  border-radius: 15%;
+  transform: rotate(5deg);
+}
+
+#ride-btn {
+  border-radius: 50%;
+  transform: rotate(9deg);
+}
+
+#high-tom-btn {
+  border-radius: 10%;
+}
