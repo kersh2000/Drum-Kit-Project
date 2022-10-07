@@ -1,63 +1,92 @@
+header {
+  color: #c21858;
+  text-shadow: 1px 1px grey;
+  text-align: center;
+}
+
+h1 {
+  border-radius: 5%;
+  display: inline;
+  margin: 0;
+  background-color: #60C689;
+}
+
 body {
-  margin: 8px;
+  margin: 0;
+  background-color: black;
+  background-image: url("https://us.123rf.com/450wm/soloviivka/soloviivka1606/soloviivka160600001/59688426-music-note-vector-icon-white-on-black-background.jpg?ver=6");
+  background-size: 124px;
+}
+
+main {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  align-items:center;
+  justify-content: center;
 }
 
 #drum-kit {
   position: relative;
-  border: 2px black solid;
-  margin-left: auto;
-  margin-right: auto;
 }
 
-img, #buttons, #labels{
-  width: 100%;
+#drums {
+  filter: invert(1);
 }
 
-button {
+#potato {
   position: absolute;
+  width: 30px;
+  top: -40px;
+  left: 0px;
 }
 
+img, #buttons{
+  width: 100%;
+  max-height: 80vh;
+}
+
+#buttons button {
+  position: absolute;
+  font-weight: 900;
+}
+
+#menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#menu button {
+  background-color: #E91E63;
+  box-shadow: 2px 2px 3px #c21858;
+  color: #191919;
+  border: none;
+  border-radius: 25%;
+  height: 5vw;
+  max-height: 20px;
+  min-height: 10px;
+  margin: 4px;
+}
+
+/* Repositioning button texts */
 #snare-btn {
-  text-align:end;
-}
-
-#btn {
-  left: 50%;
-}
-
-#bass-drum-btn {
-  border-radius: 50%;
+  padding-left: 11%;
 }
 
 #crash-btn {
-  transform: rotate(-6deg);
-  border-radius: 50%;
-}
-
-#floor-tom-btn {
-  border-radius: 10%;
-  transform: rotate(5deg);
-}
-
-#hi-hat-btn {
-  border-radius: 50%;
-  transform: rotate(3deg);
-}
-
-#snare-btn {
-  border-radius: 10%;
-}
-
-#medium-tom-btn {
-  border-radius: 15%;
-  transform: rotate(5deg);
+  padding-left: 13%;
 }
 
 #ride-btn {
-  border-radius: 50%;
-  transform: rotate(9deg);
+  padding-right: 17%;
+}
+
+#medium-tom-btn {
+  padding-bottom: 4%;
+  padding-right: 6%;
 }
 
 #high-tom-btn {
-  border-radius: 10%;
+  padding-left: 5%;
+  padding-bottom: 2.25%;
 }
